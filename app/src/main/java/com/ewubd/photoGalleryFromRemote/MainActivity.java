@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
                         ArrayList<photosArrayList> arrayList = new ArrayList<>();
                         for (String splitter : splitComma){
                             String[] splitColon = splitter.split(":");
-                            photosArrayList imagesArrayList = new photosArrayList(splitColon[0], splitColon[1]);
-                            arrayList.add(imagesArrayList);
+                            photosArrayList photosArrayList = new photosArrayList(splitColon[0], splitColon[1]);
+                            arrayList.add(photosArrayList);
                         }
                         loadData(arrayList);
                     }
